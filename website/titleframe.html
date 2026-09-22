@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>JIMMY EAT WORLD</title>
+<script language="JavaScript">
+
+function openpopup(inDir){
+	var strTest = "street_pop.html";
+	
+window.open(strTest,"","status=no,toolbar=no,directories=no,menubar=no,width=300,height=250,screenx=400,screeny=300,left=400,top=300")
+}
+
+function get_cookie(Name){
+	var search = Name + "="
+	var returnvalue = "";
+	if (document.cookie.length > 0){
+		offset = document.cookie.indexOf(search)
+		if (offset != -1) { // if cookie exists
+			offset += search.length
+			// set index of beginning of value
+			end = document.cookie.indexOf(";", offset);
+			// set index of end of cookie value
+			if (end == -1)
+				end = document.cookie.length;
+	
+returnvalue=unescape(document.cookie.substring(offset, end))
+		}
+	}
+	return returnvalue;
+}
+
+function loadpopup(inDir){
+	if (get_cookie('popped')==''){
+	openpopup(inDir)
+	document.cookie="popped=yes"
+	}
+}
+
+</script>
+</head>
+<body background="images/HeaderImage.jpeg" bgcolor="black" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0"><!--onload="loadpopup('JIMMY_STREETTEAM');" -->
+<table border="0" cellpadding="0" cellspacing="0" width="95%"><tr><td align="left" valign="top" width="150"><a href="content.html" target="content"></a></td><td align="center" valign="top"><a href="content.html" target="content"><img alt="jimmy eat world" border="0" height="114" src="images/distressedlogo2.png" width="641"/></a></td></tr></table>
+</body>
+</html>
