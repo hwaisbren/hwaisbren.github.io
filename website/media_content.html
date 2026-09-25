@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<html>
+
+<head>
+    <title>My November</title>
+    <meta name="description" content="My November Homepage">
+  <meta name="keywords" content="Band, Boston, Emo, Post-Hardcore, Hardcore, My November">
+  <!-- <link rel="canonical href="https:FUTURE_HOMEPAGE_URL.com"> -->
+    <style>
+        body {
+            /* Fallbacks are added in case a device doesn't have Arial loaded */
+            font-family: Arial, Helvetica, sans-serif; 
+/* Gallery Grid Layout */
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Slight pop effect on hover */
+}
+
+/* The Lightbox Background Overlay */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 252, 252, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+/* The Enlarged Image */
+.modal-content {
+  max-width: 90%;
+  max-height: 80%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#lightbox {
+  display: none; /* Changed to flex via JavaScript */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  
+  /* Flexbox alignment */
+  flex-direction: column;   /* Stacks the image and text vertically */
+  justify-content: center;  /* Centers the stack vertically on the screen */
+  align-items: center;      /* Centers the stack horizontally on the screen */
+  z-index: 1000;
+}
+
+#lightbox-img {
+  max-width: 80%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+#lightbox-caption {
+  color: #000000;              /* Makes the text white so it's readable */
+  font-size: 1.2rem;
+  margin-top: 15px;         /* Creates breathing room between image and text */
+  text-align: center;       /* Centers the text lines if it wraps */
+  width: 80%;               /* Prevents the text from stretching wider than the image */
+}
+/* Close Button */
+.close-btn {
+
+    display: flex;
+justify-content: center; /* Horizontally centers the text */
+align-items: center;     /* Vertically centers the text */
+height: 100%;            /* Ensure the container has a height to center within */
+    
+position: absolute;
+  top: 20px;
+  right: 35px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  
+  background-color: #c0c0c0;
+  color: #000000;
+  
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: -80%;
+  
+  border-radius: 0;
+  cursor: pointer;
+  outline: none;
+}
+        }
+    </style>
+</head>
+
+<body
+    alink="Darkred"
+    bgcolor="#FFFFFF"
+    leftmargin="0"
+    link="Darkred"
+    marginheight="0"
+    marginwidth="0"
+    text="Black"
+    topmargin="0"
+    vlink="Darkred">
+
+<br>
+
+<center>
+
+<table border="0" cellpadding="0" cellspacing="0" width="95%">
+    <tr>
+
+    <!-- BEGIN LEFT HAND COLUMN -->
+
+    <td valign="top">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td>
+                    <img src="images/headermedia.png" width="1000" height="50" alt="My November Header Image">
+
+
+                    <div style="height: 40px;"></div>
+
+                    <h2>Live Videos</h2>
+
+<table align="center" border="0" cellpadding="0" cellspacing="10" width="110%">
+<div class ="gallery" style="padding-left: 60px;">
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/7jPq8d0XAo4?si=n8RLVdfCd7aMBtCw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/x_fm4emVLq8?si=nymnOM4uewuM1jVy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="300" height="169" src="https://www.youtube.com/embed/kbRWkkVmJXo?si=7hOjIgl1wzv06rS9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  </table>
+
+    <div style="height: 20px;"></div>              
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="110%">
+            <tr>
+                <td>
+                 <h2>Live Photos</h2>
+<div class="gallery">
+  <img src="images/live/DSC_7352.jpg" loading="lazy" decoding="async" alt="Michael and Mikey going back to back. Taken by Cole Crusciel" onclick="openLightbox(this)">
+  <img src="images/live/DSC_7364.jpg" loading="lazy" decoding="async" alt="Singalong at the Cambridge American Leigon. Taken by Cole Crusciel" onclick="openLightbox(this)">
+  <img src="images/live/DSC_7370.jpg" loading="lazy" decoding="async" alt="Singalong at the Cambridge American Leigon. Taken by Cole Crusciel" onclick="openLightbox(this)">
+  <img src="images/live/DSC07335.JPEG" loading="lazy" decoding="async" alt="Michael and Mikey rocking out. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/CE17EE34-5513-4E03-8431-8EEE3C9580A5.JPEG" loading="lazy" decoding="async" alt="Cool photo from Panopticon taken by Kit" onclick="openLightbox(this)">
+  <img src="images/live/DSC07347.JPEG" loading="lazy" decoding="async" alt="Henry yelling loudly. taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07351.JPEG" loading="lazy" decoding="async" alt="Henry cheesin'. taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07396.JPEG" loading="lazy" decoding="async" alt="Garrett playing at Outforarip. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07398.JPEG" loading="lazy"  decoding="async" alt="Michael playing at Outforarip. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07403.JPEG" loading="lazy" decoding="async" alt="Henry yelling loudly again. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/B753C0FB-6BC3-40C9-9527-D7CFADEC8853.JPG" loading="lazy" decoding="async" alt="John holding up his bass like a rockstar" onclick="openLightbox(this)">
+  <img src="images/live/200C5793-481F-4E0B-AE62-3CE01FB8E729.JPG" loading="lazy" decoding="async" alt="At the Mid East Upstairs" onclick="openLightbox(this)">
+  <img src="images/live/DSC07787.JPG" loading="lazy" decoding="async" alt="Garrett playing at the Allston Abbey. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07796.JPG" loading="lazy" decoding="async" alt="Michael playing at the Allston Abbey. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07803.JPG" loading="lazy" decoding="async" alt="Henry playing at the Allston Abbey. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07813.JPG" loading="lazy" decoding="async" alt="Allston Abbey show April 4, 2026. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07818.JPG" loading="lazy" decoding="async" alt="Alex shredding at the Abbey. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07825.JPG" loading="lazy" decoding="async" alt="Ty filming the band. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07833.JPG" loading="lazy" decoding="async" alt="Michael and Hal (thanks for filling in!) playing at the Abbey. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07835.JPG" loading="lazy" decoding="async" alt="Michael playing at the Allston Abbey. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07837.JPG" loading="lazy" decoding="async" alt="Allston Abbey Show. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSC07845.JPG" loading="lazy" decoding="async" alt="Allston Abbey Show. Taken by Aya" onclick="openLightbox(this)">
+  <img src="images/live/DSCF3352-25-10-05 1.jpg" loading="lazy" decoding="async" alt="Michael at the first show. Taken by Ryder" onclick="openLightbox(this)">
+  <img src="images/live/DSCF3356-25-10-05 1.jpg" loading="lazy" decoding="async" alt="Henry at the first show. Taken by Ryder" onclick="openLightbox(this)">
+  <img src="images/live/DSCF3364-25-10-05 1.JPEG" loading="lazy" decoding="async" alt="Garrett at the first show. Taken by Ryder" onclick="openLightbox(this)">
+  
+</div> </table>
+
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="110%">
+            <tr>
+                <td>
+                 <h2>Band Photos</h2>
+<div class="gallery">
+    <img src="images/MY_NOV_BAND_PHOTO.JPEG" loading="lazy" decoding="async" alt="" onclick="openLightbox(this)">
+    <img src="images/bandpic3_b&w.png" loading="lazy" decoding="async" alt="" onclick="openLightbox(this)">
+    <img src="images/MYNOVBANDPHOTO_1 2.jpg" loading="lazy" decoding="async" alt="" onclick="openLightbox(this)">
+    <img src="images/MYNOVBANDPHOTO_5.JPEG" loading="lazy" decoding="async" alt="" onclick="openLightbox(this)">
+    <img src="images/MYNOVBANDPHOTO_2.png" loading="lazy" decoding="async" alt="" onclick="openLightbox(this)">
+    </div> </table>
+
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="110%">
+            <tr>
+                <td>
+                 <h2>Extra Stuff</h2>
+<div class="gallery">
+    <img src="images/ep2art.jpg" loading="lazy" decoding="async" alt="Cover Art for EP2" onclick="openLightbox(this)">
+    <img src="images/Extra Stuff/mynovLIABcdinside1.png" loading="lazy" decoding="async" alt="Lyric Insert for EP2" onclick="openLightbox(this)">
+    <img src="images/ep1art.jpg" loading="lazy" decoding="async" alt="Cover Art for Self Titled EP" onclick="openLightbox(this)">
+    <img src="images/Extra Stuff/insert-grain.jpg" loading="lazy" decoding="async" alt="CD Insert for Self Titled EP" onclick="openLightbox(this)">
+    <img src="images/Extra Stuff/disc-grain.jpg" loading="lazy" decoding="async" alt="CD Insert for Self Titled EP" onclick="openLightbox(this)">
+    </div> </table>
+
+<!-- The Lightbox Modal (Hidden by default) -->
+<div id="lightbox" class="modal" onclick="closeLightbox()">
+  <span class="close-btn">&times;</span>
+  <img class="modal-content" id="lightbox-img">
+   <div id="lightbox-caption"></div> 
+</div>
+
+                </td>
+            </tr>
+        </table>
+    </td>
+
+    <!-- END LEFT HAND COLUMN -->
+
+        <!-- BEGIN RIGHT HAND COLUMN -->
+
+<td align="center" valign="top" bgcolor="#FFFFFF" valign="top" width="245">
+
+
+<a href="https://open.spotify.com/artist/2R5haaV0c3DI1NGdjQDgxV?si=TAWOtT9PTk6AnfsuGcpDPA" target="_blank"><img src="images/spotifylogo.png" height="50" width="50"></a>
+<a href="https://www.instagram.com/mynovember_ma/" target="_blank"><img src="images/instagramlogo.jpeg" height="50" width="50"></a>
+<a href="https://music.apple.com/ca/artist/my-november/1822421592" target="_blank"><img src="images/applemusiclogo.webp" height="50" width="50"></a>
+
+ <div style="height: 8px;"></div>
+
+    </td>
+
+     <!-- END RIGHT HAND COLUMN -->
+</tr>
+
+</table>
+
+</center>
+
+<script> function openLightbox(thumbnail) {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const lightboxCaption = document.getElementById("lightbox-caption"); // 1. Target the caption element
+  
+  // Set the source and alt text of the big image
+  lightboxImg.src = thumbnail.src; 
+  lightboxImg.alt = thumbnail.alt; // 2. Copy alt text to the big image for accessibility
+  
+  // Set the visible caption text to match the alt text
+  lightboxCaption.textContent = thumbnail.alt; // 3. Display the text on screen
+  
+  // Change display from 'none' to 'flex' to show it
+  lightbox.style.display = "flex"; 
+}
+
+function closeLightbox() {
+  // Hide the lightbox when clicking anywhere on the overlay or close button
+  document.getElementById("lightbox").style.display = "none";
+}</script>
+
+</body>
+</html>
+
