@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<title>My November</title>
+<script>
+    const isMobileDevice =
+        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    const isSmallScreen =
+        window.innerWidth <= 600;
+
+    if (isMobileDevice || isSmallScreen) {
+        window.location.replace("../mobile/index.html");
+    }
+</script>
+<meta name="description" content="Official website for My November, a band from Boston">
+  <meta name="keywords" content="Band, Boston, Emo, Post-Hardcore, Hardcore, My November">
+  <link rel="icon" type="pylon" href="https://mynovemberband.net/images/icon.png">
+  <meta property="og:title" content="My November">
+<meta property="og:image" content="https://mynovemberband.net/images/MY_NOV_BAND_PHOTO.JPEG">
+<link rel="canonical" href="https://mynovemberband.net" />
+</head>
+<!-- frames -->
+<frameset border="0" rows="136,*">
+<frame loading="eager" frameborder="0" marginheight="0" marginwidth="0" name="top" scrolling="no" src="titleframe.html"/>
+<frameset cols="160,*">
+<frame loading="eager" frameborder="0" marginheight="0" marginwidth="0" name="nav" scrolling="auto" src="navbar.html"/>
+<frame frameborder="0" marginheight="0" marginwidth="0" name="content" scrolling="auto" src="home_content.html"/>
+</frameset>
+</html>
