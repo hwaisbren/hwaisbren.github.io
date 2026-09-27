@@ -7,9 +7,9 @@
         /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
     const isSmallScreen =
-        window.screen.width <= 600;
+        window.innerWidth <= 600;
 
-    if (not(isMobileDevice || isSmallScreen)) {
+    if (!(isMobileDevice || isSmallScreen)) {
         window.location.replace("index.html");
     }
 </script>
