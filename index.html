@@ -1,13 +1,18 @@
 
 <html>
 <head>
-<script>
-if (document.documentElement.clientWidth <= 600) {
-    window.location.href = "mobile.html";
-}
-</script>
 <title>My November</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+    const isMobileDevice =
+        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    const isSmallScreen =
+        window.screen.width <= 600;
+
+    if (isMobileDevice || isSmallScreen) {
+        window.location.replace("mobile.html");
+    }
+</script>
 <meta name="description" content="Official website for My November, a band from Boston">
   <meta name="keywords" content="Band, Boston, Emo, Post-Hardcore, Hardcore, My November">
   <link rel="icon" type="pylon" href="https://mynovemberband.net/images/icon.png">
