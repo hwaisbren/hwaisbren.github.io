@@ -1,0 +1,23 @@
+
+<html>
+<head>
+<title>My November</title>
+<script>
+    const isMobileDevice =
+        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    const isSmallScreen =
+        window.screen.width <= 600;
+
+    if (not(isMobileDevice || isSmallScreen)) {
+        window.location.replace("index.html");
+    }
+</script>
+<body>
+            Haha, you're on da phone right now so the website doesn't work!
+
+            we're working on it trust but just use instagram for now
+
+        </body>
+</head>
+</html>
