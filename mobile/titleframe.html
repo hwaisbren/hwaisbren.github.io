@@ -1,44 +1,94 @@
 <html>
 <head>
-<title>Header</title>
-<meta name="robots" content="noindex, nofollow" />
-<script language="JavaScript">
+    <title>Header</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-function openpopup(inDir){
-	var strTest = "street_pop.html";
-	
-window.open(strTest,"","status=no,toolbar=no,directories=no,menubar=no,width=300,height=250,screenx=400,screeny=300,left=400,top=300")
-}
+    <!-- W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 
-function get_cookie(Name){
-	var search = Name + "="
-	var returnvalue = "";
-	if (document.cookie.length > 0){
-		offset = document.cookie.indexOf(search)
-		if (offset != -1) { // if cookie exists
-			offset += search.length
-			// set index of beginning of value
-			end = document.cookie.indexOf(";", offset);
-			// set index of end of cookie value
-			if (end == -1)
-				end = document.cookie.length;
-	
-returnvalue=unescape(document.cookie.substring(offset, end))
-		}
-	}
-	return returnvalue;
-}
+    <script>
+        function openpopup(inDir) {
+            var strTest = "street_pop.html";
 
-function loadpopup(inDir){
-	if (get_cookie('popped')==''){
-	openpopup(inDir)
-	document.cookie="popped=yes"
-	}
-}
+            window.open(
+                strTest,
+                "",
+                "status=no,toolbar=no,directories=no,menubar=no,width=300,height=250,screenx=400,screeny=300,left=400,top=300"
+            );
+        }
 
-</script>
+        function get_cookie(Name) {
+            var search = Name + "=";
+            var returnvalue = "";
+
+            if (document.cookie.length > 0) {
+                var offset = document.cookie.indexOf(search);
+
+                if (offset != -1) {
+                    offset += search.length;
+
+                    var end = document.cookie.indexOf(";", offset);
+
+                    if (end == -1) {
+                        end = document.cookie.length;
+                    }
+
+                    returnvalue = unescape(
+                        document.cookie.substring(offset, end)
+                    );
+                }
+            }
+
+            return returnvalue;
+        }
+
+        function loadpopup(inDir) {
+            if (get_cookie("popped") == "") {
+                openpopup(inDir);
+                document.cookie = "popped=yes";
+            }
+        }
+    </script>
 </head>
-<body background="../images/HeaderImage.jpeg" bgcolor="black" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
-<table border="0" cellpadding="0" cellspacing="0" width="95%"><tr><td align="left" valign="top" width="150"><a href="home_content.html" target="content"></a></td><td align="center" valign="top"><a href="home_content.html" target="content"><img alt="my november" border="0" height="114" src="../images/distressedlogo2.png" style="width: 100%"/></a></td></tr></table>
+
+<body bgcolor="white"
+      leftmargin="0"
+      marginheight="0"
+      marginwidth="0"
+      topmargin="0">
+
+    <div class="w3-container"
+         style="display:flex; align-items:center; padding:0;">
+
+        <!-- Opens the sidebar located in the content frame -->
+		<button class="w3-button"
+				onclick="parent.frames['content'].w3_toggle()"
+				style="
+					flex-shrink: 0;
+					font-size: 32px;
+					width: 70px;
+					height: 70px;
+					padding: 0;
+				">
+			☰
+		</button>
+
+        <!-- Logo -->
+        <a href="home_content.html"
+           target="content"
+           style="flex:1; display:block;">
+
+            <img
+                alt="my november"
+                border="0"
+                src="../images/distressedlogo_short.png"
+                style="width:90%; height: 90%;; display:block;"
+            >
+
+        </a>
+
+    </div>
+
 </body>
 </html>

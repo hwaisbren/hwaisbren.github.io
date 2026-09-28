@@ -1,18 +1,46 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!DOCTYPE html>
 
 <html>
 
 <head>
     <title>Frame</title>
-    <meta name="robots" content="noindex, nofollow" />
-     <meta charset="UTF-8">
-    <title>Arial Font Example</title>
+
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- W3.CSS -->
+    <link rel="stylesheet"
+          href="https://www.w3schools.com/w3css/5/w3.css">
+
     <style>
         body {
-            
-            font-family: Arial, Helvetica, sans-serif; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #mySidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100%;
+            z-index: 9999;
+            display: none;
         }
     </style>
+
+    <script>
+        function w3_toggle() {
+        var sidebar = document.getElementById("mySidebar");
+
+        if (sidebar.style.display === "block") {
+            sidebar.style.display = "none";
+        } else {
+            sidebar.style.display = "block";
+        }
+        }
+    </script>
+
 </head>
 
 <body
@@ -26,40 +54,64 @@
     topmargin="0"
     vlink="Darkred">
 
-<br>
+    <!-- SIDEBAR -->
+    <div class="w3-sidebar w3-bar-block w3-card"
+         id="mySidebar">
 
-<center>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
 
-<table border="0" cellpadding="0" cellspacing="0" width="95%">
+    </div>
+
+
+    <!-- EXISTING PAGE CONTENT STARTS HERE -->
+
+    <center>
+
+       <table border="0"
+       cellpadding="0"
+       cellspacing="0"
+       style="width:100%; max-width:100%; table-layout:fixed;">
     <tr>
-
-    <!-- BEGIN LEFT HAND COLUMN -->
 
 
     <td align="left" valign="top">
 
-          <img src="../images/headerhome.png" width="1000" height="50" alt="My November Header Image">
-
-          <div style="height: 12px;"></div>
-
-          <img src="../images/MY_NOV_BAND_PHOTO.JPEG" width="1000" loading="lazy" decoding="async" alt="My November Header Image">
+          <img src="../images/MY_NOV_BAND_PHOTO.JPEG" width="100%" loading="lazy" decoding="async" alt="My November Header Image">
 
           <div style="height: 20px;"></div>
-
-          <img src="../images/LIAB_outnow.png" width="1000" loading="lazy" decoding="async"  alt="LIAB out now">
-
-                <div style="height: 20px;"></div>
 
         <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
                 <td>
-                    <section class="news-panel">
-  <h2 style="font-weight: bold; font-style: italic;">Latest News</h2>
+                    <section class="shows-panel">
+  <h2 style="font-weight: bold; font-style: italic; text-align: center;">Upcoming Shows</h2>
   <div class="news-card">
-    <h3 style="font-weight: bold;">We Have a Website!</h3>
-    <p>We have a website now, isn't that cool?  </p>
-    <a href="news_index.html" target="_top">More News</a>
-  </div>
+
+    
+   
+    <h3 style="font-weight: bold; text-align: center;">
+       <a href="https://www.ticketweb.com/event/tripwire-open-letter-putnam-junior-middle-east-upstairs-tickets/14337104?pl=mideastclub&REFID=clientsitewp" target="_blank">October 12, 2026 - Middle East Upstairs, Cambridge MA</a>
+    </h3>
+
+    <div style="height: 20px;"></div>
+</section>
+<section class="merch-panel">
+  <h2 style="font-weight: bold; font-style: italic; text-align: center;">Merch Goes Here</h2>
+  <div class="merch-card">
+</section>
+
+<section class="streaming-panel">
+  <h2 style="font-weight: bold; font-style: italic; text-align: center;">Streaming Goes Here</h2>
+  <div class="streaming-card">
+</section>
+
+<section class="about-panel">
+  <body style="font-weight: bold; font-style: italic; text-align: center;">My November is a Boston-based four-piece band delivering heartfelt, guitar-driven songs inspired by the likes of ‘90s Jimmy Eat World, Title Fight, Have Heart, and Lifetime. Formed by guitarist and vocalist Henry Waisbren, bassist Michael Watters, drummer Garrett Briskin and were later joined by guitarist Mikey Boylan.
+
+My November was officially formed in December 2024 after Henry and Michael had talked about starting a band enough times and decided to actually do it. Originally just a side project, they asked Garrett to record drums on the EP they were working on. On July 7th, 2025, the band had its first release: a self-titled EP. A one-off release show was held on October 4th, but it went so well they decided to keep playing consistently. The band then recruited Mikey to join as an official guitarist after playing with him as a live member consistently. Over the course of the next year, the band continued to write new music and eventually released its second EP, “Leave It All Behind”, on July 25, 2026. </body>
+  <div class="about-card">
 </section>
                 </td>
             </tr>
@@ -67,90 +119,6 @@
     </td>
 
     <!-- END LEFT HAND COLUMN -->
-
-
-    <!-- BEGIN RIGHT HAND COLUMN -->
-     
-
-
-
-    <td align="center" bgcolor="#FFFFFF" valign="top" width="245">
-
-        <a href="https://open.spotify.com/artist/2R5haaV0c3DI1NGdjQDgxV?si=TAWOtT9PTk6AnfsuGcpDPA" target="_blank"><img src="../images/spotifylogo.png" height="50" width="50"></a>
-<a href="https://www.instagram.com/mynovember_ma/" target="_blank"><img src="../images/instagramlogo.jpeg" height="50" width="50"></a>
-<a href="https://music.apple.com/ca/artist/my-november/1822421592" target="_blank"><img src="../images/applemusiclogo.webp" height="50" width="50"></a>
-
- <div style="height: 8px;"></div>
-
-        <!-- FIRST PICTURE -->
-
-        <table
-            background="./images/live/DSC07335_2.JPEG" loading="lazy" decoding="async" 
-            bgcolor="#7C91A8"
-            border="0"
-            cellpadding="1"
-            cellspacing="1"
-            width="250"
-            height="312">
-
-            <tr>
-                <td width="98%">
-                </td>
-            </tr>
-
-        </table>
-
-
-        <!-- SMALL GAP -->
-
-        <div style="height: 8px;"></div>
-
-
-        <!-- SECOND PICTURE -->
-
-        <table
-            background="./images/live/DSCF3364-25-10-05 2.JPEG" loading="lazy" decoding="async" 
-            bgcolor="#7C91A8"
-            border="0"
-            cellpadding="1"
-            cellspacing="1"
-            width="250"
-            height="312">
-
-            <tr>
-                <td width="98%">
-                </td>
-            </tr>
-
-        </table>
-
-
-        <!-- SMALL GAP -->
-
-        <div style="height: 8px;"></div>
-
-
-        <!-- THIRD PICTURE -->
-
-        <table
-            background="./images/live/DSCF3356-25-10-05 1.jpg" loading="lazy" decoding="async" 
-            bgcolor="#7C91A8"
-            border="0"
-            cellpadding="1"
-            cellspacing="1"
-            width="250"
-            height="312">
-
-            <tr>
-                <td width="98%">
-                </td>
-            </tr>
-
-        </table>
-
-    </td>
-
-    <!-- END RIGHT HAND COLUMN -->
 
 </tr>
 
