@@ -18,21 +18,24 @@
         .container {
             display: grid;
             /* Combines a 100px base height with the iPhone safe area notch padding */
-            grid-template-rows: calc(100px + env(safe-area-inset-top)) 1fr;
-            height: 100vh;
+             grid-template-rows: 100px 1fr;
+            height: 100dvh;
         }
         
         iframe {
             width: 100%;
             height: 100%;
             border: none;
+            display: block; 
         }
         
         /* Adds the physical padding into the top frame container */
         .top-frame {
-            padding-top: env(safe-area-inset-top);
-            background-color: #ffffff; /* Match your header background color */
-        }
+  /* Apply safe area padding and push the iframe down internally */
+  padding-top: env(safe-area-inset-top);
+  height: calc(100px + env(safe-area-inset-top));
+  background-color: #ffffff;
+}
 
     </style>
 <script>
@@ -55,6 +58,6 @@
             <iframe src="home_content.html" name="content"></iframe>
         </div>
     </div>
-    
+
 </head>
 </html>
