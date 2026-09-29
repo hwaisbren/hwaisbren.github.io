@@ -17,6 +17,16 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+        
+.huge-text {
+  
+  font-size: clamp(40px, 8vw, 120px); 
+}
+
+.mobile-text {
+  
+  font-size: clamp(25px, 4vw, 50px); 
+}
 
         #mySidebar {
             position: fixed;
@@ -27,6 +37,39 @@
             z-index: 9999;
             display: none;
         }
+
+        .mobile-btn {
+  
+  -webkit-appearance: none;
+  appearance: none;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  
+  min-height: 48px; 
+  padding: 12px 24px;
+  width: 60%; 
+  max-width: 100%;
+  
+ 
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+
+.mobile-btn:active {
+  background-color: #004ecc;
+  transform: scale(0.98);
+}
     </style>
 
     <script>
@@ -85,34 +128,67 @@
         <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
             <tr>
                 <td>
+
+<div style="height: 80px;"></div>
+
                     <section class="shows-panel">
-  <h2 style="font-weight: bold; font-style: italic; text-align: center;">Upcoming Shows</h2>
+  <h2 style="font-weight: bold; font-style: italic; text-align: center;" class="huge-text">Upcoming Shows</h2>
   <div class="news-card">
 
     
    
-    <h3 style="font-weight: bold; text-align: center;">
+    <h3 style="font-weight: bold; text-align: center;" class="mobile-text">
+        <div style="font-weight: bold; font-style: italic; text-align: center; margin-left: 50px; margin-right: 50px;" class="mobile-text"> 
        <a href="https://www.ticketweb.com/event/tripwire-open-letter-putnam-junior-middle-east-upstairs-tickets/14337104?pl=mideastclub&REFID=clientsitewp" target="_blank">October 12, 2026 - Middle East Upstairs, Cambridge MA</a>
+       </div>
     </h3>
 
-    <div style="height: 20px;"></div>
+    <div style="height: 80px;"></div>
 </section>
 <section class="merch-panel">
-  <h2 style="font-weight: bold; font-style: italic; text-align: center;">Merch Goes Here</h2>
+  
+  <div style="font-weight: bold; font-style: italic; text-align: center; margin-left: 50px; margin-right: 50px;" class="mobile-text"> 
+    <form>
+  <button class="mobile-btn" formaction="https://mynovember.bandcamp.com/merch" target="_blank">Merch</button>
+  </form>
+  </div>
+  </div>
+  </div>
   <div class="merch-card">
 </section>
 
-<section class="streaming-panel">
-  <h2 style="font-weight: bold; font-style: italic; text-align: center;">Streaming Goes Here</h2>
-  <div class="streaming-card">
+<div style="height: 100px;"></div>
+
+<div class=mobile-text; style="text-align: center;"> 
+   <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUdsyRzcUcmHjFDdHQe4_AJQ" allowfullscreen></iframe>
+  </div>
+ 
+  <div style="height: 80px;"></div>
+
+<section class="about-panel"> 
+    <h2 style="font-weight: bold; font-style: italic; text-align: center;" class="huge-text">About</h2> 
+  <div style="font-weight: bold; font-style: italic; text-align: center; margin-left: 50px; margin-right: 50px;" class="mobile-text"> 
+    My November is an emo band from Boston delivering heartfelt, guitar-driven songs inspired by the likes of ‘90s Jimmy Eat World, Title Fight, Have Heart, and Lifetime. Formed in 2024, They have released two EPs, "My November" on July 7, 2025 and "Leave It All Behind" on July 25, 2026.
+  </div> 
+  <div class="about-card"></div>
 </section>
 
-<section class="about-panel">
-  <body style="font-weight: bold; font-style: italic; text-align: center;">My November is a Boston-based four-piece band delivering heartfelt, guitar-driven songs inspired by the likes of ‘90s Jimmy Eat World, Title Fight, Have Heart, and Lifetime. Formed by guitarist and vocalist Henry Waisbren, bassist Michael Watters, drummer Garrett Briskin and were later joined by guitarist Mikey Boylan.
+<div style="height: 80px;"></div>
 
-My November was officially formed in December 2024 after Henry and Michael had talked about starting a band enough times and decided to actually do it. Originally just a side project, they asked Garrett to record drums on the EP they were working on. On July 7th, 2025, the band had its first release: a self-titled EP. A one-off release show was held on October 4th, but it went so well they decided to keep playing consistently. The band then recruited Mikey to join as an official guitarist after playing with him as a live member consistently. Over the course of the next year, the band continued to write new music and eventually released its second EP, “Leave It All Behind”, on July 25, 2026. </body>
-  <div class="about-card">
+<section class="streaming-panel" style="text-align: center;"> 
+    
+    <h2 style="font-weight: bold; font-style: italic; text-align: center;" class="huge-text">Links</h2> 
+    <a href="https://open.spotify.com/artist/2R5haaV0c3DI1NGdjQDgxV?si=TAWOtT9PTk6AnfsuGcpDPA" target="_blank"><img src="../images/spotifylogoNEW.png" height="90" width="90"></a> 
+   
+    <a href="https://music.apple.com/ca/artist/my-november/1822421592" target="_blank"><img src="../images/applemusiclogoNEW.png" height="100" width="90"></a> 
+    <a href="https://mynovember.bandcamp.com/" target="_blank"><img src="../images/bandcamplogoNEW.png" height="90" width="90"></a> 
+     <a href="https://www.instagram.com/mynovember_ma/" target="_blank"><img src="../images/instagram logoNEW.webp" height="90" width="90"></a> 
+
+    <div class="streaming-card"></div> <!-- Fixed unclosed div -->
+
+    <div style="height: 40px;"></div>
 </section>
+
                 </td>
             </tr>
         </table>
