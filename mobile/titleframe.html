@@ -60,15 +60,16 @@
       marginwidth="0"
       topmargin="0">
 
-<div class="w3-container" style="display:flex; align-items:center; padding: 10px 0; min-height: 80px; height: auto;">
+<div style="display: flex; align-items: center; margin-top: clamp(5px, 1.5vw, 15px); padding: 0; height: clamp(40px, 8vw, 80px); width: 100%;">
   <!-- Opens the sidebar located in the content frame -->
-  <button class="w3-button" onclick="parent.frames['content'].w3_toggle()" style="flex-shrink: 0; font-size: clamp(20px, 4vw, 36px); width: 15%; height: auto; padding: 0;">
-    ☰
-  </button>
+  <button class="w3-button" onclick="parent.frames['content'].w3_toggle()" style="flex-shrink: 0; font-size: clamp(20px, 4vw, 36px); width: 15%; height: 100%; padding: 0; display: flex; align-items: center; justify-content: center;"> ☰ </button>
+  
   <!-- Logo -->
-  <a href="home_content.html" target="content" style="flex:1; display:block;">
-    <img alt="my november" border="0" src="../images/distressedlogo_short.png" style="width:90%; height: auto; display:block;">
+  <a href="home_content.html" target="content" style="flex: 1; display: flex; justify-content: center; align-items: center; height: 100%;">
+    <img alt="my november" src="../images/distressedlogo_short.png" style="max-width: 90%; max-height: 100%; width: auto; height: auto; display: block;">
   </a>
+
+  <div style="width: 13%; flex-shrink: 0;" aria-hidden="true"></div>
 </div>
 
 </body>
