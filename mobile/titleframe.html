@@ -68,9 +68,22 @@
 </button>
   
   <!-- Logo -->
-  <a href="home_content.html" target="content" style="flex: 1; display: flex; justify-content: center; align-items: center; height: 100%;">
-    <img alt="my november" src="../images/distressedlogo_short.png" style="max-width: 90%; max-height: 100%; width: auto; height: auto; display: block;">
-  </a>
+<button
+    onclick="parent.frames['content'].scroll_home()"
+    style="
+        border: none;
+        padding: 0;
+        margin: 0;
+        background: none;
+        cursor: pointer;
+    "
+>
+    <img
+        src="../images/distressedlogo_short.png"
+        alt="Back to top"
+        style="width:100%; height:auto; display:block;"
+    >
+</button>
 
   <div style="width: 16%; flex-shrink: 0;" aria-hidden="true"></div>
 </div>
