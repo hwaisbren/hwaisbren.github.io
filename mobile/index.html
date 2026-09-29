@@ -28,12 +28,16 @@
   height: calc(100px + env(safe-area-inset-top));
   flex-shrink: 0; /* Prevents the content frame from squishing the top bar */
   background-color: #ffffff;
+  position: relative;
+  z-index: 10; 
 }
 
 .content-frame {
   flex-grow: 1;
   min-height: 0; /* Critical for iOS: forces the frame to stay within bounds */
   position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 
 iframe {
