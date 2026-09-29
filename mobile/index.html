@@ -11,6 +11,29 @@
         html {
   scroll-behavior: smooth;
 }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; overflow: hidden; }
+        
+        .container {
+            display: grid;
+            /* Combines a 100px base height with the iPhone safe area notch padding */
+            grid-template-rows: calc(100px + env(safe-area-inset-top)) 1fr;
+            height: 100vh;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        /* Adds the physical padding into the top frame container */
+        .top-frame {
+            padding-top: env(safe-area-inset-top);
+            background-color: #ffffff; /* Match your header background color */
+        }
+
     </style>
 <script>
     const isMobileDevice =
@@ -23,9 +46,15 @@
         window.location.replace("../index.html");
     }
 </script>
-<frameset border="0" rows="100,*">
-  <frame loading="eager" frameborder="0" marginheight="0" marginwidth="0" name="top" scrolling="no" src="titleframe.html"/>
-  <frame frameborder="0" marginheight="0" marginwidth="0" name="content" scrolling="auto" src="home_content.html"/>
-</frameset>
+
+    <div class="container">
+        <div class="top-frame">
+            <iframe src="titleframe.html" name="top"></iframe>
+        </div>
+        <div class="content-frame">
+            <iframe src="home_content.html" name="content"></iframe>
+        </div>
+    </div>
+    
 </head>
 </html>
