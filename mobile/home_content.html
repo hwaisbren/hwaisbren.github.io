@@ -56,7 +56,6 @@ html, body {
         }
 
         .mobile-btn {
-  
   -webkit-appearance: none;
   appearance: none;
   
@@ -65,25 +64,29 @@ html, body {
   justify-content: center;
   box-sizing: border-box;
   
-  min-height: 48px; 
-  padding: 12px 24px;
+  /* FIXED WIDTH WITH REASONABLE BASE HEIGHT */
   width: 60%; 
-  height: 5vw;
-  font-size: 1.5vw;
   max-width: 100%;
   
- 
+  /* HEIGHT CONSTANTLY SCALES WITH SCREEN WIDTH */
+  /* 8vw means the button height is exactly 8% of the browser width */
+  height: 8vw; 
+  padding: 0 4vw; /* Horizonal padding also scales with width */
+  
+  /* TEXT CONSTANTLY SCALES WITH SCREEN WIDTH */
+  /* 2.5vw means font size is exactly 2.5% of the browser width */
+  font-size: 2.5vw;
+  font-weight: 600;
+  
+  /* STYLE & LOOK */
   background-color: #000000;
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 600;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   
   transition: background-color 0.2s ease, transform 0.1s ease;
 }
-
 
 .mobile-btn:active {
   background-color: #1d1e1e;
