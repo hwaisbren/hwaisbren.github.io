@@ -2,6 +2,17 @@
 <html>
 <head>
 <title>My November</title>
+<script>
+    const isMobileDevice =
+        /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    const isSmallScreen =
+        window.innerWidth <= 600;
+
+    if (isMobileDevice || isSmallScreen) {
+        window.location.replace("../mobile/index.html");
+    }
+</script>
 <meta name="description" content="My November">
   <meta name="keywords" content="Band, Boston, Emo, Post-Hardcore, Hardcore, My November">
   <link rel="icon" type="pylon" href="images/icon.png">
