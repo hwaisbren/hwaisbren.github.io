@@ -7,12 +7,9 @@
            
             font-family: Arial, Helvetica, sans-serif; 
         }
-        h1 {
-  font-size: clamp(4rem, 8vw + 4rem, 3rem);
-}
-
-p {
-  font-size: clamp(100rem, 100vw + 100rem, 1.25rem);
+       
+        html {
+  scroll-behavior: smooth;
 }
     </style>
 <script>
@@ -26,9 +23,9 @@ p {
         window.location.replace("../index.html");
     }
 </script>
-<frameset border="0" rows="88,*">
-<frame loading="eager" frameborder="0" marginheight="0" marginwidth="0" name="top" scrolling="no" src="titleframe.html"/>
-<frame frameborder="0" marginheight="0" marginwidth="0" name="content" scrolling="auto" src="home_content.html"/>
+<frameset border="0" rows="100,*">
+  <frame loading="eager" frameborder="0" marginheight="0" marginwidth="0" name="top" scrolling="no" src="titleframe.html"/>
+  <frame frameborder="0" marginheight="0" marginwidth="0" name="content" scrolling="auto" src="home_content.html"/>
 </frameset>
 </head>
 </html>

@@ -49,6 +49,7 @@
                 document.cookie = "popped=yes";
             }
         }
+        
     </script>
 </head>
 
@@ -58,37 +59,16 @@
       marginwidth="0"
       topmargin="0">
 
-    <div class="w3-container"
-         style="display:flex; align-items:center; padding:0;">
-
-        <!-- Opens the sidebar located in the content frame -->
-		<button class="w3-button"
-				onclick="parent.frames['content'].w3_toggle()"
-				style="
-					flex-shrink: 0;
-					font-size: 32px;
-					width: 70px;
-					height: 70px;
-					padding: 0;
-				">
-			☰
-		</button>
-
-        <!-- Logo -->
-        <a href="home_content.html"
-           target="content"
-           style="flex:1; display:block;">
-
-            <img
-                alt="my november"
-                border="0"
-                src="../images/distressedlogo_short.png"
-                style="width:90%; height: auto; display:block;"
-            >
-
-        </a>
-
-    </div>
+<div class="w3-container" style="display:flex; align-items:center; padding:0; height:100px; overflow:hidden;">
+    <!-- Opens the sidebar located in the content frame -->
+    <button class="w3-button" onclick="parent.frames['content'].w3_toggle()" style=" flex-shrink: 0; font-size: 32px; width: 15%; height: auto; padding: 0; "> 
+        ☰ 
+    </button>
+    <!-- Logo -->
+    <a href="home_content.html" target="content" style="flex:1; display:block;">
+        <img alt="my november" border="0" src="../images/distressedlogo_short.png" style="width:90%; height: auto; display:block;" > 
+    </a>
+</div>
 
 </body>
 </html>

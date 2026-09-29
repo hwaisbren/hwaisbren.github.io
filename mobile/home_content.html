@@ -18,6 +18,10 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         
+html {
+  scroll-behavior: smooth;
+}
+
 .huge-text {
   
   font-size: clamp(40px, 8vw, 120px); 
@@ -32,10 +36,12 @@
             position: fixed;
             left: 0;
             top: 0;
-            width: 200px;
+            width: 100%;
             height: 100%;
             z-index: 9999;
             display: none;
+            
+            
         }
 
         .mobile-btn {
@@ -98,14 +104,15 @@
     vlink="Darkred">
 
     <!-- SIDEBAR -->
-    <div class="w3-sidebar w3-bar-block w3-card"
-         id="mySidebar">
+   <div class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
 
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-
-    </div>
+  <a href="#shows" class="w3-bar-item w3-button" style="text-align: center; font-size: clamp(30px, 6vw, 60px); font-weight: bold;" onclick="w3_toggle()">Shows</a>
+  <a href="#merch" class="w3-bar-item w3-button" style="text-align: center; font-size: clamp(30px, 6vw, 60px); font-weight: bold;" onclick="w3_toggle()">Merch</a>
+  <a href="#media" class="w3-bar-item w3-button" style="text-align: center; font-size: clamp(30px, 6vw, 60px); font-weight: bold;" onclick="w3_toggle()">Media</a>
+  <a href="#about" class="w3-bar-item w3-button" style="text-align: center; font-size: clamp(30px, 6vw, 60px); font-weight: bold;" onclick="w3_toggle()">About</a>
+  
+  
+</div>
 
 
     <!-- EXISTING PAGE CONTENT STARTS HERE -->
@@ -129,9 +136,9 @@
             <tr>
                 <td>
 
-<div style="height: 80px;"></div>
+<div style="height: 10vh;"></div>
 
-                    <section class="shows-panel">
+                    <section id="shows" class="shows-panel">
   <h2 style="font-weight: bold; font-style: italic; text-align: center;" class="huge-text">Upcoming Shows</h2>
   <div class="news-card">
 
@@ -139,17 +146,17 @@
    
     <h3 style="font-weight: bold; text-align: center;" class="mobile-text">
         <div style="font-weight: bold; font-style: italic; text-align: center; margin-left: 50px; margin-right: 50px;" class="mobile-text"> 
-       <a href="https://www.ticketweb.com/event/tripwire-open-letter-putnam-junior-middle-east-upstairs-tickets/14337104?pl=mideastclub&REFID=clientsitewp" target="_blank">October 12, 2026 - Middle East Upstairs, Cambridge MA</a>
+       <a href="https://www.ticketweb.com/event/tripwire-open-letter-putnam-junior-middle-east-upstairs-tickets/14337104?pl=mideastclub&REFID=clientsitewp" target="_blank" class="mobile-text">October 12, 2026 - Middle East Upstairs, Cambridge MA</a>
        </div>
     </h3>
 
-    <div style="height: 80px;"></div>
+   <div style="height: 10vh;"></div>
 </section>
-<section class="merch-panel">
+<section id="merch" class="merch-panel">
   
   <div style="font-weight: bold; font-style: italic; text-align: center; margin-left: 50px; margin-right: 50px;" class="mobile-text"> 
     <form>
-  <button class="mobile-btn" formaction="https://mynovember.bandcamp.com/merch" target="_blank">Merch</button>
+  <button class="mobile-btn" formaction="https://mynovember.bandcamp.com/merch" target="_blank">Shop Merch</button>
   </form>
   </div>
   </div>
@@ -157,15 +164,28 @@
   <div class="merch-card">
 </section>
 
-<div style="height: 100px;"></div>
+<div style="height: 12vh;"></div>
 
-<div class=mobile-text; style="text-align: center;"> 
-   <iframe src="https://www.youtube.com/embed?listType=playlist&list=UUdsyRzcUcmHjFDdHQe4_AJQ" allowfullscreen></iframe>
-  </div>
+<section id="media" class="media-panel"> 
+    <h2 style="font-weight: bold; font-style: italic; text-align: center;" class="huge-text">Media</h2> 
+    <div style="height: 5vh;"></div>
+<div class="mobile-text" style="text-align: center; width: 100%;">
+  <iframe 
+    src="https://www.youtube.com/embed?listType=playlist&list=UUdsyRzcUcmHjFDdHQe4_AJQ" 
+    allowfullscreen 
+    style="width: 80%; aspect-ratio: 16 / 9; border: none;">
+  </iframe>
+  <iframe 
+    src="https://www.youtube.com/embed/x_fm4emVLq8?si=TDWLZj0V_yYZL8RA" 
+    allowfullscreen 
+    style="width: 80%; aspect-ratio: 16 / 9; border: none;">
+  </iframe>
+</div>
+</section>
  
-  <div style="height: 80px;"></div>
+<div style="height: 12vh;"></div>
 
-<section class="about-panel"> 
+<section id="about" class="about-panel"> 
     <h2 style="font-weight: bold; font-style: italic; text-align: center;" class="huge-text">About</h2> 
   <div style="font-weight: bold; font-style: italic; text-align: center; margin-left: 50px; margin-right: 50px;" class="mobile-text"> 
     My November is an emo band from Boston delivering heartfelt, guitar-driven songs inspired by the likes of ‘90s Jimmy Eat World, Title Fight, Have Heart, and Lifetime. Formed in 2024, They have released two EPs, "My November" on July 7, 2025 and "Leave It All Behind" on July 25, 2026.
@@ -173,20 +193,20 @@
   <div class="about-card"></div>
 </section>
 
-<div style="height: 80px;"></div>
+<div style="height: 10vh;"></div>
 
-<section class="streaming-panel" style="text-align: center;"> 
+<section id="links" class="links-panel" style="text-align: center;"> 
     
     <h2 style="font-weight: bold; font-style: italic; text-align: center;" class="huge-text">Links</h2> 
-    <a href="https://open.spotify.com/artist/2R5haaV0c3DI1NGdjQDgxV?si=TAWOtT9PTk6AnfsuGcpDPA" target="_blank"><img src="../images/spotifylogoNEW.png" height="90" width="90"></a> 
+    <a href="https://open.spotify.com/artist/2R5haaV0c3DI1NGdjQDgxV?si=TAWOtT9PTk6AnfsuGcpDPA" target="_blank"><img src="../images/spotifylogoNEW.png" style="max-width: 20%; height: auto;"></a> 
    
-    <a href="https://music.apple.com/ca/artist/my-november/1822421592" target="_blank"><img src="../images/applemusiclogoNEW.png" height="100" width="90"></a> 
-    <a href="https://mynovember.bandcamp.com/" target="_blank"><img src="../images/bandcamplogoNEW.png" height="90" width="90"></a> 
-     <a href="https://www.instagram.com/mynovember_ma/" target="_blank"><img src="../images/instagram logoNEW.webp" height="90" width="90"></a> 
+    <a href="https://music.apple.com/ca/artist/my-november/1822421592" target="_blank"><img src="../images/applemusiclogoNEW.png" style="max-width: 20%; height: auto;"></a> 
+    <a href="https://mynovember.bandcamp.com/" target="_blank"><img src="../images/bandcamplogoNEW.png" style="max-width: 20%; height: auto;"></a> 
+     <a href="https://www.instagram.com/mynovember_ma/" target="_blank"><img src="../images/instagram logoNEW.webp" style="max-width: 20%; height: auto;"></a> 
 
     <div class="streaming-card"></div> <!-- Fixed unclosed div -->
 
-    <div style="height: 40px;"></div>
+    <div style="height: 15vh;"></div>
 </section>
 
                 </td>
